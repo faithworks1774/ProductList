@@ -1,6 +1,5 @@
 general:
   buildTool: "mta"
-  deployTool: "cf"
 
 stages:
   Build:
@@ -8,7 +7,10 @@ stages:
 
   Deploy:
     cloudFoundryDeploy: true
+
+steps:
+  cloudFoundryDeploy:
+    cfCredentialsId: "cf-service-key"
     cfApiEndpoint: "https://api.cf.us10-001.hana.ondemand.com"
     cfOrg: "3d1a9f0ftrial"
     cfSpace: "dev"
-    cfCredentialsId: "btpdeploy"
