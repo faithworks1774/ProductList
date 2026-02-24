@@ -5,7 +5,7 @@ stages:
   Build:
     mtaBuild: true
 
-  Deploy:
+  Release:
     cloudFoundryDeploy: true
 
 steps:
