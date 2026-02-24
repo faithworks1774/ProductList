@@ -9,7 +9,7 @@ stages:
 
 steps:
   cloudFoundryDeploy:
-    cfCredentialsId: cf-token
+    cfCredentialsId: btplogin
     cfApiEndpoint: https://api.cf.us10-001.hana.ondemand.com
     cfOrg: 3d1a9f0ftrial
     cfSpace: dev
