@@ -4,6 +4,10 @@ general:
 stages:
   Build:
     mtaBuild: true
+
+  UploadToTransportManagement:
+    uploadToTransportManagement: true
+
   Release:
     cloudFoundryDeploy: true
 
@@ -13,3 +17,6 @@ steps:
     cfApiEndpoint: https://api.cf.us10-001.hana.ondemand.com
     cfOrg: 3d1a9f0ftrial
     cfSpace: dev
+  uploadToTransportManagement:
+    nodeName: "TEST"
+    credentialsId: "tms"
